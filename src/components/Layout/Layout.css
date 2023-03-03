@@ -1,0 +1,138 @@
+body {
+    background-color: transparent;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav {
+    margin: 2rem 5rem;
+}
+
+.brand {
+    user-select: none;
+    font-family: 'Sacramento', cursive;
+    font-size: 2rem;
+    font-weight: 500;
+    display: inline-block;
+    margin: 1rem;
+}
+
+.brand a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    display: block;
+    float: right;
+}
+
+ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 1rem;
+}
+
+.nav-links {
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    display: inline-block;
+    padding: 0.75rem 0.9rem;
+    position: relative;
+}
+
+.nav-links:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav-links:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.active {
+    border-bottom: solid 2px #000;
+}
+
+#toggle {
+    display: none;
+}
+
+@media screen and (max-width: 945px) {
+
+    ul {
+        display: none;
+    }
+
+    .brand {
+        text-align: center;
+    }
+
+    ul.expanded {
+        display: inline-flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 3;
+        background-color: #f5f5f5;
+        left: 70%;
+    }
+
+    .hamburger {
+        position: absolute;
+        top: 5em;
+        right: 5%;
+        margin-left: -2em;
+        margin-top: -45px;
+        width: 2em;
+        height: 45px;
+        z-index: 5;
+    }
+
+    .hamburger div {
+        position: relative;
+        width: 3rem;
+        height: 7px;
+        border-radius: 3px;
+        background-color: #000000;
+        margin-top: 8px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #toggle:checked+.hamburger .top-bun {
+        transform: rotate(-45deg);
+        margin-top: 25px;
+    }
+
+    #toggle:checked+.hamburger .bottom-bun {
+        opacity: 0;
+        transform: rotate(45deg);
+    }
+
+    #toggle:checked+.hamburger .meat {
+        transform: rotate(45deg);
+        margin-top: -7px;
+    }
+
+    #toggle:checked+.hamburger+.nav {
+        top: 0;
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width:426px) {
+    ul.expanded {
+        left: 30%;
+    }
+}
