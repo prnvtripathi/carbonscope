@@ -4,7 +4,7 @@ body {
 }
 
 nav {
-    margin: 2rem 5rem;
+    margin: 1rem;
 }
 
 .brand {
@@ -20,8 +20,8 @@ nav {
     line-height: 1.4em;
     background:
         linear-gradient(#fff 0 0),
-        linear-gradient(#ffffff 0 0),
-        #ffffff;
+        linear-gradient(#5fff7a 0 0),
+        #5fff7a;
     -webkit-background-clip: text, padding-box;
     background-clip: text, padding-box;
     background-size: 100% 50%;
@@ -35,7 +35,7 @@ nav {
 .brand:hover {
     background-position: 0 100%;
     background-size: 100% 100%;
-    box-shadow: 0 0.7em 0 0 #ffffff;
+    box-shadow: 0 0.7em 0 0 #5fff7a;
     clip-path: polygon(-100vmax 0, 100% 0, 100% 100%, -100vmax 100%);
     transition: 0.4s, clip-path 0.3s 0.4s, background-size 0.3s 0.4s;
 }
@@ -46,7 +46,7 @@ nav {
 }
 
 .brand a:hover {
-    color: #565656;
+    color: #000;
     transition: all 0.5s ease-in-out;
 }
 
