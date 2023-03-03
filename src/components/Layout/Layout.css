@@ -1,6 +1,6 @@
 body {
     background-color: transparent;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Monserrat', sans-serif;
 }
 
 nav {
@@ -9,16 +9,45 @@ nav {
 
 .brand {
     user-select: none;
-    font-family: 'Sacramento', cursive;
+    font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
     font-weight: 500;
     display: inline-block;
     margin: 1rem;
+
+    /* Hover effect styles */
+    padding: 0 10px;
+    line-height: 1.4em;
+    background:
+        linear-gradient(#fff 0 0),
+        linear-gradient(#ffffff 0 0),
+        #ffffff;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    background-size: 100% 50%;
+    background-position: -100vmax 100%;
+    box-shadow: -100vmax 0.7em 0 0 #ffffff00;
+    clip-path: polygon(-100vmax 0, 100% 0, 100% calc(100% + 0.7em), -100vmax calc(100% + 0.7em));
+    background-repeat: no-repeat;
+    transition: 0.4s, box-shadow 0.3s 0.4s, background-position 0.3s 0.4s;
+}
+
+.brand:hover {
+    background-position: 0 100%;
+    background-size: 100% 100%;
+    box-shadow: 0 0.7em 0 0 #ffffff;
+    clip-path: polygon(-100vmax 0, 100% 0, 100% 100%, -100vmax 100%);
+    transition: 0.4s, clip-path 0.3s 0.4s, background-size 0.3s 0.4s;
 }
 
 .brand a {
     text-decoration: none;
-    color: #000;
+    color: #5fff7a;
+}
+
+.brand a:hover {
+    color: #565656;
+    transition: all 0.5s ease-in-out;
 }
 
 ul {
@@ -36,7 +65,7 @@ ul li {
     font-size: 1rem;
     font-weight: 400;
     text-decoration: none;
-    color: #000;
+    color: #f1f1f1;
     text-transform: uppercase;
     letter-spacing: 0.15rem;
     display: inline-block;
@@ -52,7 +81,7 @@ ul li {
     height: 2px;
     left: 50%;
     position: absolute;
-    background: #000;
+    background: #117f11;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -63,7 +92,7 @@ ul li {
 }
 
 .active {
-    border-bottom: solid 2px #000;
+    border: solid #117f11;
 }
 
 #toggle {
@@ -85,7 +114,7 @@ ul li {
         flex-direction: column;
         position: absolute;
         z-index: 3;
-        background-color: #f5f5f5;
+        background-color: #242424;
         left: 70%;
     }
 
@@ -105,7 +134,7 @@ ul li {
         width: 3rem;
         height: 7px;
         border-radius: 3px;
-        background-color: #000000;
+        background-color: #e5e5e5;
         margin-top: 8px;
         transition: all 0.3s ease-in-out;
     }
