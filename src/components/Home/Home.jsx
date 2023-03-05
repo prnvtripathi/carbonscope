@@ -1,5 +1,6 @@
 import './Home.css'
 import image1 from '../../images/image1.jpg'
+import About from '../About/About.jsx'
 
 const Home = () => {
     return (
@@ -15,7 +16,9 @@ const Home = () => {
             <div className='calc-text-container'>
                 <h2 className='calc-text'>Check out our interactive calculator, learn about your carbon footprints and actions to reduce it.</h2>
             </div>
-
+            <div className='middle'>
+                <About />
+            </div>
         </div>
     )
 }

@@ -1,0 +1,55 @@
+.about-container {
+    margin: 4rem auto auto;
+    color: #242424;
+    background-color: #d5d5d5;
+}
+
+.about-heading {
+    margin: auto;
+    padding: 2rem 0 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+hr {
+    width: 10%;
+    color: #242424;
+    border-bottom: #116e11 solid 5px;
+    border-radius: 12px;
+    padding: auto auto 1rem;
+}
+
+.about-text-container {
+    /* Flex */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+
+    /* Styling */
+    width: 80%;
+    margin: auto;
+}
+
+.abt-image-container {
+    margin: 2rem auto;
+}
+
+.abt-image {
+    border-radius: 16px;
+    scale: 1;
+    transition: all ease-in-out 0.4s;
+}
+
+.abt-image:hover {
+    filter: drop-shadow(10px 10px 15px #116e11);
+    scale: 0.9;
+}
+
+.para {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
+    text-align: left;
+}
