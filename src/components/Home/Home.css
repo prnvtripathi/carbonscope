@@ -1,97 +1,63 @@
-* {
-    box-sizing: border-box
-}
-
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
+.main-container {
     text-align: center;
+    color: #242424;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+/* TOP */
+
+.top {
+
+    /* FLex */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+
+    /* Styling */
+    background-color: #d5d5d5;
+    width: max-content;
+    margin: 4rem auto auto;
+    padding: 2rem;
+    border-radius: 16px;
+    width: 85%;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+.heading-container {
+    margin-top: 1rem;
+    width: 44%;
 }
 
-.active,
-.dot:hover {
-    background-color: #717171;
+.heading {
+    font-family: 'Tilt Warp', sans-serif;
+    font-weight: 600;
+    font-size: 3.5rem;
 }
 
-/* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+.carbon {
+    color: #116e11;
 }
 
-@keyframes fade {
-    from {
-        opacity: .4
-    }
+.hero-image {
+    border-radius: 16px;
+    scale: 1;
+    transition: all ease-in-out 0.4s;
+}
 
-    to {
-        opacity: 1
-    }
+.hero-image:hover {
+    scale: 0.9;
+    filter: drop-shadow(10px 10px 15px #116e11);
+}
+
+.calc-text-container {
+    margin: 4rem auto auto;
+    padding: auto;
+    width: 70%;
+}
+
+.calc-text {
+    color: #d5d5d5;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.75rem;
 }

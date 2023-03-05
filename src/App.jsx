@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
-import Layout from './components/Layout/Layout'
-import Home from './components/Home/Home'
+import Layout from './components/Layout/Layout.jsx'
+import Home from './components/Home/Home.jsx'
 
 function App() {
 
@@ -11,9 +11,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
-          {/* <Route path='/contact' element={<Contact />} />
-          <Route path='/about' element={<About />} />
-          <Route path='*' element={<NoPage />} /> */}
+          {/* Add more routes here */}
         </Route>
       </Routes>
     </BrowserRouter>
