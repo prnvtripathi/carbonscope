@@ -19,6 +19,9 @@ const Home = () => {
             <div className='middle'>
                 <About />
             </div>
+            <div className='bottom'>
+                
+            </div>
         </div>
     )
 }
