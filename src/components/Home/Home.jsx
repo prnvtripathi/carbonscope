@@ -1,6 +1,7 @@
 import './Home.css'
 import image1 from '../../images/image1.jpg'
 import About from '../About/About.jsx'
+import Footer from '../Footer/Footer.jsx'
 
 const Home = () => {
     return (
@@ -20,7 +21,7 @@ const Home = () => {
                 <About />
             </div>
             <div className='bottom'>
-                
+                <Footer />
             </div>
         </div>
     )
