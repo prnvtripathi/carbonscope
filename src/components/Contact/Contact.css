@@ -1,0 +1,13 @@
+.contact-container {
+    margin: auto;
+    width: 80%;
+}
+
+.contact-heading-container {
+    margin: 2rem auto 0;
+}
+
+.contact-heading {
+    color: #d5d5d5;
+    font-style: oblique;
+}
