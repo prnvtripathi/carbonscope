@@ -26,6 +26,7 @@ hr {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: row;
     gap: 3rem;
 
     /* Styling */
@@ -41,6 +42,7 @@ hr {
     border-radius: 16px;
     scale: 1;
     transition: all ease-in-out 0.4s;
+    width: 35%;
 }
 
 .abt-image:hover {
@@ -52,4 +54,35 @@ hr {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.25rem;
     text-align: left;
+}
+
+@media screen and (max-width: 769px) {
+    .about-container {
+        margin: 0 auto;
+        border-radius: 16px;
+    }
+
+    .about-text-container {
+        flex-direction: column;
+    }
+
+    .abt-image {
+        width: 65%;
+        margin-top: 2rem;
+    }
+
+    .para {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .about-heading {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .para {
+        font-size: 1rem;
+    }
 }

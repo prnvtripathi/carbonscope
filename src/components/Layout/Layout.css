@@ -164,4 +164,8 @@ ul li {
     ul.expanded {
         left: 30%;
     }
+    
+    .brand {
+        margin-left: -2rem;
+    }
 }

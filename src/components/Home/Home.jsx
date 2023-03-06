@@ -10,9 +10,7 @@ const Home = () => {
                 <div className='heading-container'>
                     <h1 className='heading'>Calculate your <span className='carbon'>Carbon Footprints</span> 👣</h1>
                 </div>
-                <div className='img-container'>
-                    <img className='hero-image' src={image1} alt='Carbon' width={400} />
-                </div>
+                <img className='hero-image' src={image1} alt='Carbon' />
             </div>
             <div className='calc-text-container'>
                 <h2 className='calc-text'>Check out our interactive calculator, learn about your carbon footprints and actions to reduce it.</h2>

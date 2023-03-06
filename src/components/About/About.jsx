@@ -9,9 +9,7 @@ const About = () => {
             </h2>
             <hr />
             <div className='about-text-container'>
-                <div className='abt-image-container'>
-                    <img className='abt-image' src={image4} alt='Smoke' width={475} />
-                </div>
+                <img className='abt-image' src={image4} alt='Smoke' />
                 <div className='abt-text'>
                     <p className='para'>
                         The entire amount of greenhouse gases—including carbon dioxide and

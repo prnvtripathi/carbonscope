@@ -10,9 +10,8 @@
     /* FLex */
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     align-items: center;
-    gap: 1rem;
+    flex-direction: row;
 
     /* Styling */
     background-color: #d5d5d5;
@@ -25,7 +24,6 @@
 
 .heading-container {
     margin-top: 1rem;
-    width: 44%;
 }
 
 .heading {
@@ -39,9 +37,11 @@
 }
 
 .hero-image {
+    margin: auto;
     border-radius: 16px;
     scale: 1;
     transition: all ease-in-out 0.4s;
+    width: 35%;
 }
 
 .hero-image:hover {
@@ -60,4 +60,25 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 769px) {
+    .hero-image {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .top {
+        flex-direction: column-reverse;
+    }
+    
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .calc-text {
+        font-size: 1.4rem;
+    }
 }
